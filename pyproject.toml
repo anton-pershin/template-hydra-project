@@ -1,3 +1,26 @@
+[project]
+name = "XXX"
+description = "XXX"
+dynamic = ["version"]
+authors = [
+  {name = "Anton Pershin", email = "tony.pershin@gmail.com"},
+]
+readme = "README.md"
+requires-python = ">= 3.13"
+dependencies = [
+  "XXX>0.0.0",
+]
+
+[build-system]
+requires = ["hatchling >= 1.26", "versioningit"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "versioningit"
+
+[tool.versioningit]
+default-version = "0.0.0"
+
 [tool.pylint]
 max-line-length = 88
 
